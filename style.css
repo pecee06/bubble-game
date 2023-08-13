@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Ubuntu&display=swap');
+
+.window-properties{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-window{
+    background-image: url("/resources/console.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color-burn;
+    gap: 3vw;
+    justify-content: center;
+    font-family: 'Alef', sans-serif;
+}
+
+.welcome-window h2{
+    font-size: 6.5vw;
+    background-color: #4158D0;
+    background-image: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, crimson 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 3vw;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all ease 0.4s;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.game-window{
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+    background-image: url("resources/console2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-window .dashboard{
+    height: 20%;
+    width: 100%;
+    background-color: rgba(77, 86, 51, 0.7);
+    background-blend-mode: color-burn;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.game-variables{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.game-variables .value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.game-window .screen{
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color-burn;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.after-game-over{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#gameover{
+    font-size: 4vw;
+    color: white;
+}
+
+#final-score{
+    font-size: 2vw;
+    color: white;
+}
+
+#play-again{
+    display: none;
+}
+
+.game-window .value{
+    font-size: 2vw;
+}
+
+.bubble{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.bubble:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}

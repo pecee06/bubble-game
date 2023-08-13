@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="welcome-window window-properties">
+        <h2>Welcome to the Bubble Game</h2>
+        <button class="btn">Click to Play</button>
+    </div>
+    <div class="game-window window-properties">
+        <div class="dashboard">
+            <div class="game-variables">
+                <div class="parameter">FIND</div>
+                <div class="value" id="find"></div>
+            </div>
+            <div class="game-variables">
+                <div class="parameter">TIMER</div>
+                <div class="value" id="timer"></div>
+            </div>
+            <div class="game-variables">
+                <div class="parameter">SCORE</div>
+                <div class="value" id="score"></div>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="after-game-over">
+                <h1 id="gameover"></h1>
+                <h3 id="final-score"></h3>
+                <button id="play-again" class="btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
